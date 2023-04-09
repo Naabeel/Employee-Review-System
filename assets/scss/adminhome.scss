@@ -1,0 +1,19 @@
+body{
+    
+    nav{
+        height: 10vh;
+        width: 100vw;
+        border: 1px black solid;
+        display: flex;
+        justify-content: space-between;
+
+            #image{
+                height: 100%;
+                width: 20%;
+                border: 1px solid red;
+            }
+    }
+
+
+
+}

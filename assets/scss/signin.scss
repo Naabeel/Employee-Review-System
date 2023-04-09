@@ -1,0 +1,31 @@
+body{
+
+  #signin-form{
+     height: 50vh;
+     width: 40vw;
+     border: 1px orange solid;
+     position: absolute;
+     left: 30%;
+     top: 10%;
+
+     form{
+        height: 100%;
+        width: 100%;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // flex-direction: column;
+
+
+        .input-div{
+            margin: 5%;
+        }
+        
+        button{
+            margin: 2% 5%;
+        }
+    }
+
+    }
+
+}

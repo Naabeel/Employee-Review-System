@@ -1,0 +1,64 @@
+
+<link rel="stylesheet" href="/css/userhome.css">
+
+<%- include('_navbar'); -%>
+    <section id="userhome-section">
+    
+    <div id="user-info">
+        <h2>User Profile</h2>
+        <div id="user">
+            <div>
+                <p class="bold">Name:</p>
+                <p>
+                    <%=locals.user.name%>
+                </p>
+            </div>
+            <div>
+                <p class="bold">Emp-Id:</p>
+                <p>
+                    <%= locals.user.empid%>
+                </p>
+            </div>
+            <div>
+                <p class="bold">Email:</p>
+                <p>
+                    <%= locals.user.email%>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="tobe-reviewed">
+        
+        <ul >
+            
+            <% for(i of review){%>
+                <% if(locals.user.id != i.user._id &&  i.userwhohavewrittenreviews.includes(locals.user.id) == false){%>
+                <li class="lis">
+                    <div>
+                        <p class="heading">Name:</p>
+                        <p><%= i.name%></p>
+                    </div>
+                    <div>
+                        <p class="heading">Emp-Id:</p>
+                        <p><%= i.empid%></p>
+                    </div>
+                    <div>
+                        <p class="heading">Review for: </p>
+                        <p><%= i.content%></p>
+                    </div>
+                    <form action="/user/createreviewbyuser" method="post">
+                        <input type="hidden" name="review" value="<%= i.id%>">
+                        <label for="review" class="heading">Your Review:</label>
+                        <textarea name="content" id="review" cols="30" rows="3"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </li>    
+                    <%}%>
+                <%}%>
+        </ul>
+    </div>
+</section>
+
+  
+    

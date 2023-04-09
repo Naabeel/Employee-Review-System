@@ -1,0 +1,55 @@
+
+h1{
+    text-align: center;
+}
+
+section{
+    /* border: 1px solid black; */
+    height: 73vh;
+    width: 80vw;
+    padding: 0;
+    margin-left: 8%;
+}
+
+section ul{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+section ul a{
+    text-decoration: none;
+}
+
+section ul::-webkit-scrollbar {
+    display: none;
+  }
+
+.review-list-li{
+    height: 40%;
+    width: 90%;
+    border: 1px solid black;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 2%;
+    border-radius: 10px;
+    padding-left: 2%;
+    color: black;
+}
+
+.review-list-li:hover{
+    background-color: rgb(173, 172, 172);
+}
+
+.review-list-li >div{
+    height: 20%;
+    display: flex;
+}
+
+.review-headings{
+    font-weight: 600;
+    margin-right: 2%;
+}

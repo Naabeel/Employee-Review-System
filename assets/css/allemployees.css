@@ -1,0 +1,50 @@
+
+#the-div{
+    display: flex;
+}
+
+#user-info{
+    height: 50%;
+    width: 20%;
+  }
+  
+  #user div{
+  display: flex;
+  }
+  
+  .bold{
+    font-weight: 600;
+    margin-right: 3%;
+    margin-left: 1%;
+  }
+
+  section{
+    height: 80vh;
+    width: 70vw;
+    border-left: 2px black solid;
+    padding-left: 1%;
+  }
+
+  section ol{
+    height: 87%;
+    width: 95.5%;
+    /* border: 1px solid brown; */
+    overflow-x: hidden;
+  }
+
+  section ol::-webkit-scrollbar {
+    display: none;
+  }
+
+  .employees-li{
+    height: 10%;
+    width: 80%;
+    /* border: 1px solid black; */
+  }
+
+  .employees-li a{
+    font-weight: 1000;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+  }

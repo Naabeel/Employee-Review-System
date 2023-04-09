@@ -1,0 +1,36 @@
+
+<%- include('_adminnav'); -%>
+    <section>
+    <div>
+        <h2>name:</h2>
+        <p><%- user.name%></p>
+    </div>
+    <div>
+        <h2>Emp-Id:</h2>
+        <p><%- user.empid%></p>
+    </div>
+    <div>
+        <h2>Email:</h2>
+        <p><%- user.email%></p>
+    </div>
+    <div>
+        <h2>isAdmin:</h2>
+        <p><%= user.isAdmin %></p>
+    </div>
+    <div>
+        <form action="/admin/createReview" method="post">
+            <h2>Create Review</h2>
+            <input type="hidden" name="name" value="<%= user.name%>">
+            <input type="hidden" name="empid" value="<%= user.empid%>">
+            <input type="hidden" name="user" value="<%= user.id%>">
+            <label for="content">For:</label>
+            <textarea name="content" id="content" cols="30" rows="5"></textarea>
+            <button type="submit">Create Review</button>
+        </form>
+    </div>
+    <div>
+        <a href="/admin/makeAdmin/<%- user.id%>">
+            <button>Make Admin</button>
+        </a>
+    </div>
+    </section>

@@ -1,0 +1,34 @@
+
+<link rel="stylesheet" href="/css/allreview.css">
+    <%- include('_adminnav'); -%>
+
+    <h1>Reviews</h1>
+    <section>
+        <ul>
+            <% for(i of reviews){%>
+                <a href="/admin/updatePage/<%- i.id%>">
+                    <li class="review-list-li">
+                        <div>
+                            <p class="review-headings">Name:</p>
+                            <p>
+                                <%- i.name%>
+                            </p>
+                        </div>
+                        <div>
+                            <p class="review-headings">Emp-Id:</p>
+                            <p><%- i.empid%></p>
+                        </div>
+                        <div>
+                            <p class="review-headings">Review by user:</p>
+                            <p><%- i.content%></p>
+                        </div>
+                        <div>
+                            <p class="review-headings">Created on:</p>
+                            <p><%= i.updatedAt.toString().substring(0,15)%></p>
+                        </div>
+                    </li>
+                </a>
+            <%}%>
+        </ul>
+    </section>
+    

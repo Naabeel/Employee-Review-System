@@ -1,0 +1,39 @@
+body{
+
+    #div-form{
+        height: 50vh;
+        width: 30vw;
+        margin-top: 5%;
+        // text-align: center;
+        position: absolute;
+        left: 30vw;
+
+        h1{
+            text-align: center;
+        }
+
+        form{
+            height: 100%;
+            width: 100%;
+            border: 1px black solid;
+            // display: flex;
+            // justify-content: flex-start;
+            // flex-direction: column;
+            // background-color: green;
+            // align-items: center;
+
+            
+            .input-divs{
+                margin: 5%;
+            }
+
+            button{
+                margin: 2% 5%;
+            }
+        }
+        
+    }
+
+    
+
+}

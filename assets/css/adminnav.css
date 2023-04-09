@@ -1,0 +1,81 @@
+/*------------- navbar--------------------------- */
+nav {
+    height: 10vh;
+    width: 95vw;
+    border: 5px black solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 1%;
+  }
+  
+  #image{
+    height: 100%;
+    width: 10%;
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+  
+  #links-for-pages{
+    height: 100%;
+    width: 40%;
+    /* border: 1px orangered dashed; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #links-for-pages a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+  }
+  
+  #searchbar{
+    height: 100%;
+    width: 40%;
+    /* border-left: 2px black solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #input-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #input-div input{
+    height: 40%;
+    width: 70%;
+  }
+  #input-div button{
+    height: 40%;
+    width: 20%;
+  }
+  
+  #input-div{
+    width: 80%;
+    height: 100%;
+    /* border-right: 2px solid black; */
+    display: flex;
+  }
+  
+  #logout-div{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  #logout-div a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  }

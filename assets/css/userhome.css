@@ -1,0 +1,80 @@
+
+
+#userhome-section{
+    height: 86vh;
+    width: 95vw;
+    margin-left: 2%;
+    /* border: 1px solid black; */
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* #userhome-section >div{
+    border: 1px brown solid;
+} */
+
+#user-info{
+    height: 50%;
+    width: 20%;
+}
+
+#user div{
+display: flex;
+}
+
+.bold{
+    font-weight: 600;
+    margin-right: 3%;
+    margin-left: 1%;
+}
+
+#tobe-reviewed{
+    height: 100%;
+    width: 80%;
+}
+
+#tobe-reviewed >ul{
+    margin-top: 0;
+    height: 100%;
+    width: 95.5%;
+    border-left:  1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: hidden;
+    list-style: none;
+    
+}
+
+#tobe-reviewed > ul::-webkit-scrollbar {
+    display: none;
+  }
+
+.lis{
+    border: 3px solid black;
+    border-radius: 5%;
+    margin-bottom: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.lis >div{
+    display: flex;
+}
+
+.heading{
+    font-weight: 600;
+    margin-right: 5%;
+}
+
+.lis form{
+    display: flex;
+}
+
+.lis form button{
+    height: 40%;
+    align-self: center;
+    margin-left: 2%;
+}

@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="/css/reviewupdatepage.css">
+
+<%- include('_adminnav'); -%>
+<section>
+    <div id="updation-form-div">
+        <h2>Update</h2>
+        <form action="/admin/updatereview/<%- review.id%>" method="post">
+            <div>
+                <label class="bold" for="">Name:</label>
+                <input type="text" name="name" value="<%- review.name%>">
+            </div>
+            <div>
+                <label class="bold" for="">Emp-Id:</label>
+                <input type="text" name="empid" value="<%- review.empid%>">
+            </div>
+            <div>
+                <label class="bold" for="">Content:</label>
+                <textarea name="content" id="" cols="30" rows="5" > <%- review.content%></textarea>
+            </div>
+            <button type="submit">Update</button>
+        </form>
+        <a href="/admin/deleteReview/<%- review.id%>"><button>Delete</button></a>
+    </div>
+    <div id="review-div">
+        <h2>Reviews</h2>
+        <ul>
+            <% for(i of review.reviews){%>
+                <li class="users-reviews">
+                    <p class="bold">
+                        <%= i.content%>
+                    </p>
+
+                    <div class="name-date">
+                        <p>
+                            <%= i.user.name%>
+                        </p>
+                        <p>
+                            <%= i.updatedAt.toString().substring(0,15)%>
+                        </p>
+                    </div>
+                </li>    
+            <%}%>
+        </ul>
+    </div>
+</section>

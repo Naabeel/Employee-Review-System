@@ -1,0 +1,35 @@
+body #signin-form {
+  height: 50vh;
+  width: 40vw;
+  border: 5px black solid;
+  position: absolute;
+  left: 30%;
+  top: 10%;
+}
+
+#signin-form h1{
+  text-align: center;
+}
+
+body #signin-form form {
+  height: 100%;
+  width: 100%;
+}
+
+body #signin-form form .input-div {
+  margin: 5%;
+}
+
+body #signin-form form button {
+  margin: 2% 5%;
+}
+
+h3{
+  text-align: center;
+  margin-top: -5%;
+}
+
+h3 a{
+  text-decoration: none;
+  color: black;
+}
